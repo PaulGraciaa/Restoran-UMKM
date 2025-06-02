@@ -1,0 +1,113 @@
+/* Warna utama */
+:root {
+  --bg-light: #f8f7f0;
+  --dark-blue: #222b52;
+  --gray-blue: #7f858d;
+  --header-height: 70px;
+  --footer-height: 60px;
+  --shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Gaya Umum */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--bg-light);
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  padding-top: var(--header-height);
+  padding-bottom: var(--footer-height);
+  box-sizing: border-box;
+}
+
+/* Header */
+header {
+  background-color: var(--dark-blue);
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  box-shadow: var(--shadow);
+  z-index: 1000;
+}
+
+
+/* Footer */
+footer {
+  background-color: var(--dark-blue);
+  color: white;
+  text-align: center;
+  height: var(--footer-height);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  box-shadow: var(--shadow);
+  z-index: 1000;
+}
+
+/* Container Login */
+.login-container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.05);
+  width: 90%;
+  max-width: 400px;
+  margin: 100px auto 80px auto; /* Menyesuaikan header & footer */
+  text-align: center;
+  
+}
+
+
+.login-container h2 {
+  margin-bottom: 20px;
+  color: var(--dark-blue);
+}
+
+/* Input Fields */
+input[type="text"],
+input[type="number"] {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+/* Tombol Masuk */
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--gray-blue);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+button:hover {
+  background-color: #60656b;
+}
+
+/* Pesan Error */
+#error-msg {
+  color: red;
+  margin-top: 10px;
+}
